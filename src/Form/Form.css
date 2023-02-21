@@ -1,0 +1,22 @@
+.res-form {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-left: 30em;
+    margin-right: 30em;
+  }
+  
+  input {
+    height: 2em;
+    width: 13em;
+    margin: 0em 2em 0em 2em;
+  }
+  
+  button {
+    background-color: #268080;
+    color: #ffffff;
+    border: 1px solid white;
+    width: 13em;
+    margin: 0em 2em 0em 2em;
+  }
