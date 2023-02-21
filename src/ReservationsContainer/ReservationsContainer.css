@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
-    justify-content: flex-start;
+    justify-content: center;
     height: 120%;
     align-items: flex-start;
   }
