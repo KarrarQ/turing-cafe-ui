@@ -16,7 +16,7 @@ const ReservationsContainer = ({ reservations  }) => {
         )
       })
   return (
-    <div>
+    <div className="resy-cards">
         {reservationCards}
     </div>
   )
