@@ -16,6 +16,20 @@ class Form extends Component {
     this.setState({ [event.target.name]: event.target.value });
   }
 
+  clearInputs = () => {
+    this.setState({ name: '', date: '', time: '', number: '' })
+  }
+
+  submitResy = event => {
+    event.preventDefault();
+    const newResy = {
+      id: Date.now(),
+      ...this.state
+    }
+    this.props.addResy(newResy);
+    this.clearInputs();
+  }
+
   render() {
     return (
       <form>
@@ -47,7 +61,7 @@ class Form extends Component {
           value={this.state.guests}
           onChange={event => this.handleChange(event)}
         />
-        <button>Make Reservation</button>
+        <button onClick={event => this.submitResy(event)}>Make Reservation</button>
       </form>
     )
   }
